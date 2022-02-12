@@ -9,7 +9,7 @@ import com.ran.bean.ListNode;
  *
  * @author ran
  */
-public class MiddleNode {
+public class MiddleNode_876 {
     public ListNode middleNode(ListNode head) {
         if(head==null||head.next==null) return head;
         ListNode p1 = head;
