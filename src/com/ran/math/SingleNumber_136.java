@@ -1,4 +1,4 @@
-package com.ran.array;
+package com.ran.math;
 
 /**
  * ClassName: SingleNumber_136
