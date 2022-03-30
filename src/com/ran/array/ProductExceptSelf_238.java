@@ -1,6 +1,7 @@
 package com.ran.array;
 
 import java.util.Arrays;
+import java.util.regex.Pattern;
 
 /**
  * ClassName: ProductExceptSelf_238
@@ -24,10 +25,12 @@ public class ProductExceptSelf_238 {
         return ans;
     }
 
+
+
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4};
-        int[] nums1 = {-1,1,0,-3,3};
-        ProductExceptSelf_238 obj = new ProductExceptSelf_238();
-        System.out.println(Arrays.toString(obj.productExceptSelf(nums1)));
+//        int[] nums = {1,2,3,4};
+//        int[] nums1 = {-1,1,0,-3,3};
+//        ProductExceptSelf_238 obj = new ProductExceptSelf_238();
+//        System.out.println(Arrays.toString(obj.productExceptSelf(nums1)));
     }
 }
