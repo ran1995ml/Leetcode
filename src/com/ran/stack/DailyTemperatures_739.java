@@ -19,14 +19,14 @@ public class DailyTemperatures_739 {
                 stack.pop();
             }
             ans[i] = stack.isEmpty()?0:stack.peek()-i;
-            stack.add(i);
+            stack.push(i);
         }
         return ans;
     }
 
     public static void main(String[] args) {
         DailyTemperatures_739 obj = new DailyTemperatures_739();
-        int[] temperatures = {89,62,70,58,47,47,46,76,100,70};
+        int[] temperatures = {73,74,75,71,69,72,76,73};
         System.out.println(Arrays.toString(obj.dailyTemperatures(temperatures)));
     }
 }
