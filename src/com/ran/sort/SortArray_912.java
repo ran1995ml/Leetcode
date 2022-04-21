@@ -74,18 +74,24 @@ public class SortArray_912 {
         int i = 0;
         int j = 0;
         int k = 0;
-        int[] ans = new int[left.length+right.length];
-        while(i<left.length&&j<right.length){
-            ans[k++] = left[i]<right[j]?left[i++]:right[j++];
+        int[] arrs = new int[left.length+right.length];
+        while (k<arrs.length&&i<left.length&&j<right.length){
+            if(left[i]<right[j]){
+                arrs[k++] = left[i++];
+            }else{
+                arrs[k++] = right[j++];
+            }
         }
         while (i<left.length){
-            ans[k++] = left[i++];
+            arrs[k++] = left[i++];
         }
         while (j<right.length){
-            ans[k++] = right[j++];
+            arrs[k++] = right[j++];
         }
-        return ans;
+        return arrs;
     }
+
+
 
     /**
      * 堆排序
